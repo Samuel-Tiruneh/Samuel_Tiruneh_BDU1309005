@@ -443,21 +443,25 @@ header .container{
 .vist-container{
     
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
     padding: 80px 50px;
 }
 .vist-container a:first-child{
-    margin-right: 30px;
+    margin-bottom: 10px;
 
 }
+
 .vist-container a{
     padding: 10px 10px;
     font-weight: 600;
+    width: 300px;
 }
 
-.bordertop{
-    border-bottom: 3px solid aqua;
-    width: 50%;
+@media screen and (max-width: 775px){
+    .vist-container{
+         justify-content: center;
+         align-items: center;
+    }
 }
